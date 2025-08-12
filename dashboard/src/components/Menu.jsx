@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./UserWidget.css";
-import axios from "axios";
+
 
 const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState(0);
@@ -123,5 +123,6 @@ const Menu = () => {
     </div>
   );
 };
+
 
 export default Menu;
