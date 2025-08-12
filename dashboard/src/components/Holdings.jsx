@@ -22,7 +22,7 @@ const Holdings = () => {
  
   //fethcing holdings data from backend
   useEffect(()=>{
-    axios.get(`${process.env.REACT_APP_BACKEND_URL}/allHoldings`)
+    axios.get(`${process.env.REACT_APP_API_URL}/allHoldings`)
     .then( (res)=>{
       setAllHoldings(res.data);
       //console.log(res);
@@ -95,5 +95,6 @@ const Holdings = () => {
     </>
   );
 };
+
 
 export default Holdings;
