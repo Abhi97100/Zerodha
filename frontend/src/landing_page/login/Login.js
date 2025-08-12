@@ -12,7 +12,7 @@ function Login() {
    
     const handleSubmit = (event)=>{
         
-        axios.post(`${process.env.REACT_APP_BACKEND_URL}/logIn`, {email, password})
+        axios.post(`${process.env.REACT_APP_API_URL}/logIn`, {email, password})
         .then( (res)=>{
             //checks the status code. if 201, user is new and brings user in dashboard
             if(res.status === 201){
@@ -69,3 +69,4 @@ function Login() {
 }
 
 export default Login;
+
