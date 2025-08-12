@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 
-import axios from "axios";
+
 
 import GeneralContext from "./GeneralContext.jsx";
 
@@ -179,4 +179,5 @@ const WatchListActions = ({ uid }) => {
       </span>
     </span>
   );
+
 };
