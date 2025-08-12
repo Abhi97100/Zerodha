@@ -6,7 +6,7 @@ const Positions = () => {
   let [allPositions, setAllPositions] = useState([]);
 
   useEffect(()=>{
-    axios.get(`${process.env.REACT_APP_BACKEND_URL}/allPositions`)
+    axios.get(`${process.env.REACT_APP_FRONTEND_URL}/allPositions`)
     .then( (res)=>{
       setAllPositions(res.data);
     })
@@ -57,5 +57,6 @@ const Positions = () => {
     </>
   );
 };
+
 
 export default Positions;
