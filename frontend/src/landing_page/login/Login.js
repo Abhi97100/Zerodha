@@ -17,7 +17,7 @@ function Login() {
             //checks the status code. if 201, user is new and brings user in dashboard
             if(res.status === 201){
                 setTimeout(()=>{
-                    window.location.href = process.env.https://zerodha-1-xzbu.onrender.com;
+                    window.location.href = "https://zerodha-1-xzbu.onrender.com";
                 },500);
             //if 202, shows user a pop up, that the user exist & stays the user in signup page
             }else if(res.status === 202){
@@ -69,6 +69,7 @@ function Login() {
 }
 
 export default Login;
+
 
 
 
