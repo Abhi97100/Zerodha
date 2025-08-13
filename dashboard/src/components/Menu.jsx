@@ -27,7 +27,7 @@ const Menu = () => {
     console.log("handle log out clicked");
     localStorage.removeItem('token'); 
     setTimeout(()=>{
-          window.location.href = `${process.env.REACT_APP_FRONTEND_URL}/logIn`;  
+          window.location.href = `${process.env.https://zerodha-2-xik5.onrender.com}/logIn`;  
           window.history.pushState(null, "", window.location.href);
     }, 500);
   }
@@ -126,3 +126,4 @@ const Menu = () => {
 
 
 export default Menu;
+
