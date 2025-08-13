@@ -22,7 +22,7 @@ const Holdings = () => {
  
   //fethcing holdings data from backend
   useEffect(()=>{
-    axios.get(`${process.env.https://zerodha-3kpr.onrender.com}/allHoldings`)
+    axios.get(`https://zerodha-3kpr.onrender.com/allHoldings`)
     .then( (res)=>{
       setAllHoldings(res.data);
       //console.log(res);
@@ -98,4 +98,5 @@ const Holdings = () => {
 
 
 export default Holdings;
+
 
