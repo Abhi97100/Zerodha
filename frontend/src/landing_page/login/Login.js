@@ -12,7 +12,7 @@ function Login() {
    
     const handleSubmit = (event)=>{
         
-        axios.post(`${process.env.https://zerodha-3kpr.onrender.com}/logIn`, {email, password})
+        axios.post(`https://zerodha-3kpr.onrender.com/logIn`, {email, password})
         .then( (res)=>{
             //checks the status code. if 201, user is new and brings user in dashboard
             if(res.status === 201){
@@ -69,5 +69,6 @@ function Login() {
 }
 
 export default Login;
+
 
 
