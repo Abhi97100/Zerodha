@@ -17,12 +17,12 @@ function Signup() {
 
         event.preventDefault();
 
-        axios.post(`${process.env.REACT_APP_API_URL}/signUp`, {email, password})
+        axios.post(`${process.env.https://zerodha-3kpr.onrender.com}/signUp`, {email, password})
         .then( (res)=>{
             //checks the status code. if 201, user is new and brings user in dashboard
             if(res.status === 201){
                 setTimeout(()=>{
-                    window.location.href = process.env.REACT_APP_DASHBOARD_URL;
+                    window.location.href = process.env.https://zerodha-1-xzbu.onrender.com;
                     
                 },500);
                 
@@ -74,3 +74,4 @@ function Signup() {
 
 
 export default Signup;
+
