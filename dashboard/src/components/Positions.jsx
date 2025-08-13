@@ -6,7 +6,7 @@ const Positions = () => {
   let [allPositions, setAllPositions] = useState([]);
 
   useEffect(()=>{
-    axios.get(`${process.env.https://zerodha-2-xik5.onrender.com}/allPositions`)
+    axios.get(`https://zerodha-2-xik5.onrender.com/allPositions`)
     .then( (res)=>{
       setAllPositions(res.data);
     })
@@ -60,4 +60,5 @@ const Positions = () => {
 
 
 export default Positions;
+
 
