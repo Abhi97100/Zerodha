@@ -17,7 +17,7 @@ function Signup() {
 
         event.preventDefault();
 
-        axios.post(`${process.env.https://zerodha-3kpr.onrender.com}/signUp`, {email, password})
+        axios.post(`https://zerodha-3kpr.onrender.com/signUp`, {email, password})
         .then( (res)=>{
             //checks the status code. if 201, user is new and brings user in dashboard
             if(res.status === 201){
@@ -74,4 +74,5 @@ function Signup() {
 
 
 export default Signup;
+
 
